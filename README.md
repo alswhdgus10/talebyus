@@ -1,4 +1,4 @@
-# rule
+# talebyus
 
 ## Git
 
@@ -19,3 +19,9 @@
 ### 테스트 코드는 필수입니다.
 
 * [Travis CI](https://travis-ci.org) 활용
+
+## Subproject Status
+
+[![Build Status](https://travis-ci.org/talebyus/talebyus.svg)](https://travis-ci.org/talebyus/talebyus)
+
+* [slack-keyword-bot](https://github.com/talebyus/talebyus/tree/master/keyword)
