@@ -1,0 +1,14 @@
+{
+  "name": "keyword-bot",
+  "version": "1.0.0",
+  "description": "simple keyword extractor",
+  "main": "keybot.js",
+  "scripts": {
+    "test": "node keybot"
+  },
+  "author": "Sunghoon Kang",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
