@@ -1,8 +1,10 @@
 'use strict'
 
+const inc = 'in_channel';
+const restxt = '뽑힌 키워드는 다음과 같습니다.';
+
 var express = require('express');
 var keyword = require('./keyword.json');
-const restxt = '뽑힌 키워드는 다음과 같습니다.'
 
 var app = express();
 
@@ -28,6 +30,7 @@ app.get('/', function(req, res) {
             }
         }
         res.json({
+            'response_type': inc,
             'text': restxt,
             'attachments': [{
                 'text': response
