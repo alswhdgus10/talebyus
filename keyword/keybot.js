@@ -11,14 +11,11 @@ var app = express();
 
 app.get('/', function(req, res) {
     if (req.query.token === 'YOUR_SLACK_TOKEN') {
-        var random_num = utils.createRandomBaseArr(keyword);
-        var random = utils.createRandomArr(random_num);
-        var response = utils.createRespStr(keyword, random);
         res.json({
             'response_type': inc,
             'text': restxt,
             'attachments': [{
-                'text': response
+                'text': utils.createRespStr()
             }]
         });
     } else {
